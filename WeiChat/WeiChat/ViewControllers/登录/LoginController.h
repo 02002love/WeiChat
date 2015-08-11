@@ -1,0 +1,13 @@
+//
+//  LoginController.h
+//  WeiChat
+//
+//  Created by JinWei on 15/8/11.
+//  Copyright (c) 2015年 SongJinWei. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface LoginController : UIViewController
+
+@end

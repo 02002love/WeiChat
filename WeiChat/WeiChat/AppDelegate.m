@@ -18,6 +18,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     //宋金委
+    [application setStatusBarHidden:NO];
+    [application setStatusBarStyle:UIStatusBarStyleDefault];
     return YES;
 }
 
