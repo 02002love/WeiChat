@@ -590,6 +590,11 @@
 		4E6E74931B7A207900A62DB7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6E74921B7A207900A62DB7 /* QuartzCore.framework */; };
 		4E6E74951B7A208300A62DB7 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6E74941B7A208300A62DB7 /* libsqlite3.dylib */; };
 		4E6E74971B7A208E00A62DB7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6E74961B7A208E00A62DB7 /* libz.dylib */; };
+		4E93B9C51B7B06D100CD4B89 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E93B9C11B7B06D100CD4B89 /* MBProgressHUD+MJ.m */; };
+		4E93B9C61B7B06D100CD4B89 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4E93B9C21B7B06D100CD4B89 /* MBProgressHUD.bundle */; };
+		4E93B9C71B7B06D100CD4B89 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E93B9C41B7B06D100CD4B89 /* MBProgressHUD.m */; };
+		4E93B9D01B7B6DF300CD4B89 /* RegisterController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E93B9CF1B7B6DF300CD4B89 /* RegisterController1.m */; };
+		4E93B9D31B7B825600CD4B89 /* RegisterController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E93B9D21B7B825600CD4B89 /* RegisterController2.m */; };
 		4EFEC3641B7A322900D11D02 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFEC3631B7A322900D11D02 /* LoginController.m */; };
 /* End PBXBuildFile section */
 
@@ -1344,6 +1349,15 @@
 		4E6E74941B7A208300A62DB7 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		4E6E74961B7A208E00A62DB7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		4E6E74991B7A230900A62DB7 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		4E93B9C01B7B06D100CD4B89 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		4E93B9C11B7B06D100CD4B89 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		4E93B9C21B7B06D100CD4B89 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		4E93B9C31B7B06D100CD4B89 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		4E93B9C41B7B06D100CD4B89 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		4E93B9CE1B7B6DF300CD4B89 /* RegisterController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController1.h; sourceTree = "<group>"; };
+		4E93B9CF1B7B6DF300CD4B89 /* RegisterController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController1.m; sourceTree = "<group>"; };
+		4E93B9D11B7B825600CD4B89 /* RegisterController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController2.h; sourceTree = "<group>"; };
+		4E93B9D21B7B825600CD4B89 /* RegisterController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController2.m; sourceTree = "<group>"; };
 		4EFEC3621B7A322900D11D02 /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
 		4EFEC3631B7A322900D11D02 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1910,6 +1924,10 @@
 		4E251BD61B7A3028000B6B12 /* 注册 */ = {
 			isa = PBXGroup;
 			children = (
+				4E93B9CE1B7B6DF300CD4B89 /* RegisterController1.h */,
+				4E93B9CF1B7B6DF300CD4B89 /* RegisterController1.m */,
+				4E93B9D11B7B825600CD4B89 /* RegisterController2.h */,
+				4E93B9D21B7B825600CD4B89 /* RegisterController2.m */,
 			);
 			path = "注册";
 			sourceTree = "<group>";
@@ -1987,6 +2005,7 @@
 		4E6E72961B7A1DA800A62DB7 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				4E93B9BF1B7B06D100CD4B89 /* MBProgressHUD */,
 				4E6E72971B7A1DA800A62DB7 /* FMDB */,
 				4E6E72A21B7A1DA800A62DB7 /* netWork */,
 				4E6E72AA1B7A1DA800A62DB7 /* UI类 */,
@@ -2817,6 +2836,18 @@
 			path = minizip;
 			sourceTree = "<group>";
 		};
+		4E93B9BF1B7B06D100CD4B89 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				4E93B9C01B7B06D100CD4B89 /* MBProgressHUD+MJ.h */,
+				4E93B9C11B7B06D100CD4B89 /* MBProgressHUD+MJ.m */,
+				4E93B9C21B7B06D100CD4B89 /* MBProgressHUD.bundle */,
+				4E93B9C31B7B06D100CD4B89 /* MBProgressHUD.h */,
+				4E93B9C41B7B06D100CD4B89 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		4EFEC3611B7A321900D11D02 /* 登录 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3043,6 +3074,7 @@
 				4E251A3E1B7A26FA000B6B12 /* aio_notify_down@2x.png in Resources */,
 				4E251B411B7A26FB000B6B12 /* mqz_popup_menu_qzone@2x.png in Resources */,
 				4E251AF91B7A26FA000B6B12 /* menu_icon_profile@2x.png in Resources */,
+				4E93B9C61B7B06D100CD4B89 /* MBProgressHUD.bundle in Resources */,
 				4E251B621B7A26FB000B6B12 /* tab_qworld_nor@2x.png in Resources */,
 				4E251A561B7A26FA000B6B12 /* chat_bottom_keyboard_press@2x.png in Resources */,
 				4E251B761B7A26FB000B6B12 /* usersummar_audio_mic_normal@2x.png in Resources */,
@@ -3407,6 +3439,7 @@
 				4E6E72761B7A1BAE00A62DB7 /* AppDelegate.m in Sources */,
 				4E6E74191B7A1DA800A62DB7 /* XMPPPresence.m in Sources */,
 				4E6E74251B7A1DA800A62DB7 /* XMPPResourceMemoryStorageObject.m in Sources */,
+				4E93B9D01B7B6DF300CD4B89 /* RegisterController1.m in Sources */,
 				4E6E741D1B7A1DA800A62DB7 /* XMPPGoogleSharedStatus.m in Sources */,
 				4E6E743B1B7A1DA800A62DB7 /* XMPPMessage+XEP0045.m in Sources */,
 				4E6E74311B7A1DA800A62DB7 /* XMPPRoomCoreDataStorage.m in Sources */,
@@ -3448,6 +3481,7 @@
 				4E6E74401B7A1DA800A62DB7 /* XMPPvCardCoreDataStorage.m in Sources */,
 				4E6E748A1B7A1DA800A62DB7 /* zip.c in Sources */,
 				4E6E74701B7A1DA800A62DB7 /* DDList.m in Sources */,
+				4E93B9D31B7B825600CD4B89 /* RegisterController2.m in Sources */,
 				4E6E74181B7A1DA800A62DB7 /* XMPPParser.m in Sources */,
 				4E6E74521B7A1DA800A62DB7 /* NSDate+XMPPDateTimeProfiles.m in Sources */,
 				4E6E74331B7A1DA800A62DB7 /* XMPPRoomOccupantCoreDataStorageObject.m in Sources */,
@@ -3475,6 +3509,7 @@
 				4E6E74681B7A1DA800A62DB7 /* XMPPTime.m in Sources */,
 				4E6E74851B7A1DA800A62DB7 /* ZCMessageObject.m in Sources */,
 				4E6E74591B7A1DA800A62DB7 /* XMPPCapsResourceCoreDataStorageObject.m in Sources */,
+				4E93B9C71B7B06D100CD4B89 /* MBProgressHUD.m in Sources */,
 				4E6E72731B7A1BAE00A62DB7 /* main.m in Sources */,
 				4E6E74431B7A1DA800A62DB7 /* XMPPvCardTemp.m in Sources */,
 				4E6E74641B7A1DA800A62DB7 /* XMPPMessageDeliveryReceipts.m in Sources */,
@@ -3490,6 +3525,7 @@
 				4E6E745F1B7A1DA800A62DB7 /* XMPPMessageArchiving.m in Sources */,
 				4E6E74891B7A1DA800A62DB7 /* unzip.c in Sources */,
 				4E6E74531B7A1DA800A62DB7 /* XMPPDateTimeProfiles.m in Sources */,
+				4E93B9C51B7B06D100CD4B89 /* MBProgressHUD+MJ.m in Sources */,
 				4E6E744A1B7A1DA800A62DB7 /* XMPPvCardTempTel.m in Sources */,
 				4E6E74001B7A1DA800A62DB7 /* FMDatabase.m in Sources */,
 				4E6E74351B7A1DA800A62DB7 /* XMPPRoomHybridStorage.m in Sources */,
