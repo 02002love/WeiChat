@@ -576,7 +576,6 @@
 		4E6E74811B7A1DA800A62DB7 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6E73E21B7A1DA800A62DB7 /* DDXMLElement.m */; };
 		4E6E74821B7A1DA800A62DB7 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6E73E41B7A1DA800A62DB7 /* DDXMLNode.m */; };
 		4E6E74831B7A1DA800A62DB7 /* build-libidn.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4E6E73E81B7A1DA800A62DB7 /* build-libidn.sh */; };
-		4E6E74841B7A1DA800A62DB7 /* libidn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6E73EA1B7A1DA800A62DB7 /* libidn.a */; };
 		4E6E74851B7A1DA800A62DB7 /* ZCMessageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6E73F01B7A1DA800A62DB7 /* ZCMessageObject.m */; };
 		4E6E74861B7A1DA800A62DB7 /* ZCXMPPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6E73F21B7A1DA800A62DB7 /* ZCXMPPManager.m */; };
 		4E6E74871B7A1DA800A62DB7 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E6E73F61B7A1DA800A62DB7 /* ioapi.c */; };
@@ -595,6 +594,7 @@
 		4E93B9C71B7B06D100CD4B89 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E93B9C41B7B06D100CD4B89 /* MBProgressHUD.m */; };
 		4E93B9D01B7B6DF300CD4B89 /* RegisterController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E93B9CF1B7B6DF300CD4B89 /* RegisterController1.m */; };
 		4E93B9D31B7B825600CD4B89 /* RegisterController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E93B9D21B7B825600CD4B89 /* RegisterController2.m */; };
+		4EAB00E01B7CA41B00DC44A0 /* libidn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAB00DF1B7CA41B00DC44A0 /* libidn.a */; };
 		4EFEC3641B7A322900D11D02 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFEC3631B7A322900D11D02 /* LoginController.m */; };
 /* End PBXBuildFile section */
 
@@ -1323,7 +1323,6 @@
 		4E6E73E61B7A1DA800A62DB7 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
 		4E6E73E81B7A1DA800A62DB7 /* build-libidn.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "build-libidn.sh"; sourceTree = "<group>"; };
 		4E6E73E91B7A1DA800A62DB7 /* idn-int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "idn-int.h"; sourceTree = "<group>"; };
-		4E6E73EA1B7A1DA800A62DB7 /* libidn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libidn.a; sourceTree = "<group>"; };
 		4E6E73EB1B7A1DA800A62DB7 /* stringprep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringprep.h; sourceTree = "<group>"; };
 		4E6E73EC1B7A1DA800A62DB7 /* XMPPFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPFramework.h; sourceTree = "<group>"; };
 		4E6E73EE1B7A1DA800A62DB7 /* DEFIND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEFIND.h; sourceTree = "<group>"; };
@@ -1358,6 +1357,7 @@
 		4E93B9CF1B7B6DF300CD4B89 /* RegisterController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController1.m; sourceTree = "<group>"; };
 		4E93B9D11B7B825600CD4B89 /* RegisterController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController2.h; sourceTree = "<group>"; };
 		4E93B9D21B7B825600CD4B89 /* RegisterController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController2.m; sourceTree = "<group>"; };
+		4EAB00DF1B7CA41B00DC44A0 /* libidn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libidn.a; sourceTree = "<group>"; };
 		4EFEC3621B7A322900D11D02 /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
 		4EFEC3631B7A322900D11D02 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1368,13 +1368,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E25186D1B7A25E8000B6B12 /* libresolv.dylib in Frameworks */,
+				4EAB00E01B7CA41B00DC44A0 /* libidn.a in Frameworks */,
 				4E6E74971B7A208E00A62DB7 /* libz.dylib in Frameworks */,
 				4E6E74951B7A208300A62DB7 /* libsqlite3.dylib in Frameworks */,
 				4E6E74931B7A207900A62DB7 /* QuartzCore.framework in Frameworks */,
 				4E6E74911B7A206E00A62DB7 /* Security.framework in Frameworks */,
 				4E6E748F1B7A206400A62DB7 /* CFNetwork.framework in Frameworks */,
 				4E6E748D1B7A205900A62DB7 /* libxml2.dylib in Frameworks */,
-				4E6E74841B7A1DA800A62DB7 /* libidn.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2790,9 +2790,9 @@
 		4E6E73E71B7A1DA800A62DB7 /* libidn */ = {
 			isa = PBXGroup;
 			children = (
+				4EAB00DF1B7CA41B00DC44A0 /* libidn.a */,
 				4E6E73E81B7A1DA800A62DB7 /* build-libidn.sh */,
 				4E6E73E91B7A1DA800A62DB7 /* idn-int.h */,
-				4E6E73EA1B7A1DA800A62DB7 /* libidn.a */,
 				4E6E73EB1B7A1DA800A62DB7 /* stringprep.h */,
 			);
 			path = libidn;
@@ -2906,6 +2906,7 @@
 				TargetAttributes = {
 					4E6E726C1B7A1BAE00A62DB7 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 3BFN843GX2;
 					};
 					4E6E72851B7A1BAF00A62DB7 = {
 						CreatedOnToolsVersion = 6.4;
@@ -3660,6 +3661,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WeiChat/Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3674,6 +3676,7 @@
 					"$(PROJECT_DIR)/WeiChat/3rd/XMPP/Vendor/libidn",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -3682,6 +3685,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WeiChat/Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3696,6 +3700,7 @@
 					"$(PROJECT_DIR)/WeiChat/3rd/XMPP/Vendor/libidn",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

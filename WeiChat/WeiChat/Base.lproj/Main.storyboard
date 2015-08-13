@@ -56,7 +56,7 @@
                                         <rect key="frame" x="29" y="187" width="20" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入账号" minimumFontSize="17" id="0kG-Va-oYF">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入账号" minimumFontSize="17" clearButtonMode="whileEditing" id="0kG-Va-oYF">
                                         <rect key="frame" x="74" y="182" width="227" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -65,7 +65,7 @@
                                             <outlet property="delegate" destination="x7R-7Z-68g" id="Dao-qu-sWJ"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" minimumFontSize="17" id="WUZ-Fl-iJd">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" minimumFontSize="17" clearButtonMode="whileEditing" id="WUZ-Fl-iJd">
                                         <rect key="frame" x="74" y="240" width="227" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -302,6 +302,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Yrw-x0-6ee" kind="push" id="y07-L5-kBu"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -317,6 +320,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xv6-OS-igo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1221" y="280"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="B0b-wv-I8p">
+            <objects>
+                <viewController id="Yrw-x0-6ee" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ub3-u3-wdM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mnw-FM-fOw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qiO-6g-Oq4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1627" y="280"/>
         </scene>
     </scenes>
     <resources>
