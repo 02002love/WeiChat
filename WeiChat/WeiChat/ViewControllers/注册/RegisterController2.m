@@ -16,8 +16,11 @@
 @property (weak, nonatomic) IBOutlet UIButton *birthdayButton;
 @property (weak, nonatomic) IBOutlet UIButton *sexButton;
 @property (weak, nonatomic) IBOutlet UIImageView *sexImage;
+- (IBAction)nextBtnClick;
+
 - (IBAction)birthdayClick;
 - (IBAction)sexClick;
+
 
 @property (nonatomic,strong)UIDatePicker * birthPicker;
 
@@ -71,7 +74,8 @@
             self.sexImage.image = [UIImage imageNamed:@"icon_register_man"];
             
         }
-        
+        RegisterManager * manager = [RegisterManager sharedManager];
+        manager.sex = self.sexButton.titleLabel.text;
     }
 }
 
@@ -81,7 +85,8 @@
     //    获取 image
     UIImage * image =[info objectForKey:UIImagePickerControllerOriginalImage];
     [self.imageButton setBackgroundImage:image forState:UIControlStateNormal];
-    
+    RegisterManager * manager = [RegisterManager sharedManager];
+    manager.headImage = self.imageButton.imageView.image;
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
@@ -92,6 +97,12 @@
     
 }
 
+
+- (IBAction)nextBtnClick {
+  
+    [self performSegueWithIdentifier:@"two2three" sender:nil];
+    
+}
 
 - (IBAction)birthdayClick {
     if (self.birthPicker) {
@@ -128,7 +139,8 @@
     [formatter setDateFormat:@"yyyy-MM-dd"];
     [self.birthdayButton setTitle:[formatter stringFromDate:date] forState:UIControlStateNormal];
     
-    
+    RegisterManager * manager = [RegisterManager sharedManager];
+    manager.birthday = self.birthdayButton.titleLabel.text;
 }
 - (IBAction)sexClick {
     

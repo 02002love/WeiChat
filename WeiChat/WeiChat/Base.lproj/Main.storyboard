@@ -117,7 +117,7 @@
             </objects>
             <point key="canvasLocation" x="425" y="282"/>
         </scene>
-        <!--请输入昵称(1/4)-->
+        <!--设置昵称(1/4)-->
         <scene sceneID="cc9-SA-h1a">
             <objects>
                 <viewController id="pC3-Fr-Q2U" customClass="RegisterController1" sceneMemberID="viewController">
@@ -125,7 +125,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bcE-HZ-oyc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bcE-HZ-oyc" userLabel="用户名">
                                 <rect key="frame" x="21" y="88" width="244" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -174,7 +174,7 @@
                                     <action selector="retryButton" destination="pC3-Fr-Q2U" eventType="touchUpInside" id="ivK-DV-tES"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="8TG-gG-vkg">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请填写昵称" minimumFontSize="17" id="8TG-gG-vkg">
                                 <rect key="frame" x="61" y="168" width="259" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -187,8 +187,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="请输入昵称(1/4)" id="D4a-Sp-wcm">
-                        <barButtonItem key="backBarButtonItem" title="返回" id="hSo-oQ-5ou"/>
+                    <navigationItem key="navigationItem" title="设置昵称(1/4)" id="D4a-Sp-wcm">
+                        <barButtonItem key="backBarButtonItem" title="设置昵称" id="hVh-7V-uEr"/>
                         <barButtonItem key="leftBarButtonItem" image="header_leftbtn_black_nor.png" style="plain" id="6BT-vZ-dOe">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1R9-0Q-xCB">
                                 <rect key="frame" x="-23" y="-15" width="71" height="30"/>
@@ -197,7 +197,13 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="backClick" destination="pC3-Fr-Q2U" eventType="touchUpInside" id="IIA-Mg-4fs"/>
+                                </connections>
                             </button>
+                            <connections>
+                                <action selector="backButtonClick:" destination="pC3-Fr-Q2U" id="gly-A5-eRf"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="RGA-JN-gwJ">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WIP-03-XNX">
@@ -208,19 +214,23 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Zrf-Op-gaZ" kind="push" id="OcS-t1-fTv"/>
+                                    <action selector="nextBtnClick" destination="pC3-Fr-Q2U" eventType="touchUpInside" id="sTs-lf-cDS"/>
                                 </connections>
                             </button>
+                            <connections>
+                                <action selector="nextBtnClick:" destination="pC3-Fr-Q2U" id="onV-YT-DNC"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="nickNameTextField" destination="8TG-gG-vkg" id="Bgc-KN-Yfb"/>
                         <outlet property="numberLabel" destination="bcE-HZ-oyc" id="ono-XS-unq"/>
+                        <segue destination="Zrf-Op-gaZ" kind="push" identifier="one2two" id="OXT-V7-ZsM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DUH-Qa-coY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="793" y="280"/>
+            <point key="canvasLocation" x="820" y="280"/>
         </scene>
         <!--个人资料(2/4)-->
         <scene sceneID="XrR-JU-K9K">
@@ -294,6 +304,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="个人资料(2/4)" id="G5D-93-uA2">
+                        <barButtonItem key="backBarButtonItem" title="个人资料" id="qzA-Vl-BeT"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="8LF-Pr-X1Q">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0l8-IW-yAm">
                                 <rect key="frame" x="-23" y="-15" width="71" height="30"/>
@@ -303,7 +314,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Yrw-x0-6ee" kind="push" id="y07-L5-kBu"/>
+                                    <action selector="nextBtnClick" destination="Zrf-Op-gaZ" eventType="touchUpInside" id="rn6-Xo-tFP"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -315,35 +326,180 @@
                         <outlet property="sexButton" destination="6vG-Uw-4Tr" id="Lv9-jN-MZ6"/>
                         <outlet property="sexImage" destination="ErP-Vt-2BF" id="Gsw-zI-Y2b"/>
                         <outlet property="sexView" destination="MZ6-Ok-RAC" id="pgb-aM-MtZ"/>
+                        <segue destination="Yrw-x0-6ee" kind="push" identifier="two2three" id="Iww-DL-a9E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xv6-OS-igo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1221" y="280"/>
         </scene>
-        <!--View Controller-->
+        <!--登录信息(3/4)-->
         <scene sceneID="B0b-wv-I8p">
             <objects>
-                <viewController id="Yrw-x0-6ee" sceneMemberID="viewController">
+                <viewController id="Yrw-x0-6ee" customClass="RegisterController3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ub3-u3-wdM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="202-No-02R" userLabel="生日">
+                                <rect key="frame" x="0.0" y="170" width="320" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_register_mobile.png" id="ckb-Gq-ovv">
+                                        <rect key="frame" x="20" y="22" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" minimumFontSize="17" clearButtonMode="whileEditing" id="rDT-Fs-KZu">
+                                        <rect key="frame" x="48" y="17" width="272" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Yrw-x0-6ee" id="R5F-sd-tX5"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="6Ft-2s-zsu" userLabel="性别">
+                                <rect key="frame" x="0.0" y="234" width="320" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_register_password.png" id="XkX-hR-Pit">
+                                        <rect key="frame" x="22" y="22" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" minimumFontSize="17" clearButtonMode="whileEditing" id="41C-DQ-MMD">
+                                        <rect key="frame" x="48" y="17" width="272" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Yrw-x0-6ee" id="vr5-y4-hD9"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mnw-FM-fOw"/>
+                    <navigationItem key="navigationItem" title="登录信息(3/4)" id="mnw-FM-fOw">
+                        <barButtonItem key="backBarButtonItem" title="登录信息" id="wMt-qV-sHd"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="R31-Gy-iUZ">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hAZ-Vg-eiO">
+                                <rect key="frame" x="-23" y="-15" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="下一步">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextBtnClick" destination="Yrw-x0-6ee" eventType="touchUpInside" id="Eev-gO-3io"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="passwordFiled" destination="41C-DQ-MMD" id="5YC-ta-WuZ"/>
+                        <outlet property="phoneNumField" destination="rDT-Fs-KZu" id="MxA-gh-2As"/>
+                        <segue destination="Cpe-f6-eJ3" kind="push" identifier="three2four" id="aAc-x9-sed"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qiO-6g-Oq4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1627" y="280"/>
         </scene>
+        <!--完善资料(4/4)-->
+        <scene sceneID="3Id-ID-NoK">
+            <objects>
+                <viewController id="Cpe-f6-eJ3" customClass="RegisterController4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rsh-p3-Pyh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="c6u-cq-IjI" userLabel="性别">
+                                <rect key="frame" x="0.0" y="234" width="320" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feed_loc_new.png" id="uKu-wL-D84">
+                                        <rect key="frame" x="22" y="22" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入地址" minimumFontSize="17" clearButtonMode="whileEditing" id="B2t-eS-tpg">
+                                        <rect key="frame" x="48" y="17" width="272" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Cpe-f6-eJ3" id="ZQK-5b-m3u"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="Vpx-mS-iui" userLabel="生日">
+                                <rect key="frame" x="0.0" y="170" width="320" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_edit.png" id="zCB-4f-7X6">
+                                        <rect key="frame" x="20" y="22" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入签名" minimumFontSize="17" clearButtonMode="whileEditing" id="Ent-79-Z6X">
+                                        <rect key="frame" x="48" y="17" width="272" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Cpe-f6-eJ3" id="aUp-ng-pUP"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="完善资料(4/4)" id="RAV-jI-peS">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="t4j-Vw-WXv">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Icu-Xc-J4A">
+                                <rect key="frame" x="-23" y="-15" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="完成">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <connections>
+                                <action selector="completeButton:" destination="Cpe-f6-eJ3" id="EAl-cj-z3l"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addressLabel" destination="B2t-eS-tpg" id="kcy-wq-toX"/>
+                        <outlet property="wordLabel" destination="Ent-79-Z6X" id="jLq-6h-m0S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bza-l6-Ud6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2028" y="280"/>
+        </scene>
     </scenes>
     <resources>
         <image name="btn_login_bg_2.png" width="110" height="39"/>
+        <image name="feed_loc_new.png" width="12" height="12"/>
         <image name="header_leftbtn_black_nor.png" width="60" height="32"/>
+        <image name="icon_edit.png" width="17" height="17"/>
         <image name="icon_register_birthday.png" width="16" height="16"/>
         <image name="icon_register_camera.png" width="100" height="100"/>
         <image name="icon_register_gender.png" width="16" height="16"/>
+        <image name="icon_register_mobile.png" width="16" height="16"/>
         <image name="icon_register_name.png" width="16" height="16"/>
+        <image name="icon_register_password.png" width="16" height="16"/>
         <image name="login.png" width="290" height="96"/>
         <image name="logo_2.png" width="60" height="60"/>
         <image name="logo_bg_2.png" width="320" height="480"/>

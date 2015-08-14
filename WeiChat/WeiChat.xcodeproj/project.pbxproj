@@ -595,6 +595,9 @@
 		4E93B9D01B7B6DF300CD4B89 /* RegisterController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E93B9CF1B7B6DF300CD4B89 /* RegisterController1.m */; };
 		4E93B9D31B7B825600CD4B89 /* RegisterController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E93B9D21B7B825600CD4B89 /* RegisterController2.m */; };
 		4EAB00E01B7CA41B00DC44A0 /* libidn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAB00DF1B7CA41B00DC44A0 /* libidn.a */; };
+		4EAB00E51B7CBAE500DC44A0 /* RegisterController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAB00E41B7CBAE500DC44A0 /* RegisterController3.m */; };
+		4EAB00E81B7CC25C00DC44A0 /* RegisterController4.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAB00E71B7CC25C00DC44A0 /* RegisterController4.m */; };
+		4EAB00EC1B7CC50100DC44A0 /* RegisterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAB00EB1B7CC50100DC44A0 /* RegisterManager.m */; };
 		4EFEC3641B7A322900D11D02 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFEC3631B7A322900D11D02 /* LoginController.m */; };
 /* End PBXBuildFile section */
 
@@ -1358,6 +1361,12 @@
 		4E93B9D11B7B825600CD4B89 /* RegisterController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController2.h; sourceTree = "<group>"; };
 		4E93B9D21B7B825600CD4B89 /* RegisterController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController2.m; sourceTree = "<group>"; };
 		4EAB00DF1B7CA41B00DC44A0 /* libidn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libidn.a; sourceTree = "<group>"; };
+		4EAB00E31B7CBAE500DC44A0 /* RegisterController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController3.h; sourceTree = "<group>"; };
+		4EAB00E41B7CBAE500DC44A0 /* RegisterController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController3.m; sourceTree = "<group>"; };
+		4EAB00E61B7CC25C00DC44A0 /* RegisterController4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController4.h; sourceTree = "<group>"; };
+		4EAB00E71B7CC25C00DC44A0 /* RegisterController4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController4.m; sourceTree = "<group>"; };
+		4EAB00EA1B7CC50100DC44A0 /* RegisterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterManager.h; sourceTree = "<group>"; };
+		4EAB00EB1B7CC50100DC44A0 /* RegisterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterManager.m; sourceTree = "<group>"; };
 		4EFEC3621B7A322900D11D02 /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
 		4EFEC3631B7A322900D11D02 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1928,6 +1937,10 @@
 				4E93B9CF1B7B6DF300CD4B89 /* RegisterController1.m */,
 				4E93B9D11B7B825600CD4B89 /* RegisterController2.h */,
 				4E93B9D21B7B825600CD4B89 /* RegisterController2.m */,
+				4EAB00E31B7CBAE500DC44A0 /* RegisterController3.h */,
+				4EAB00E41B7CBAE500DC44A0 /* RegisterController3.m */,
+				4EAB00E61B7CC25C00DC44A0 /* RegisterController4.h */,
+				4EAB00E71B7CC25C00DC44A0 /* RegisterController4.m */,
 			);
 			path = "注册";
 			sourceTree = "<group>";
@@ -1960,6 +1973,7 @@
 		4E6E726F1B7A1BAE00A62DB7 /* WeiChat */ = {
 			isa = PBXGroup;
 			children = (
+				4EAB00E91B7CC4DE00DC44A0 /* Models */,
 				4E6E72961B7A1DA800A62DB7 /* 3rd */,
 				4E25186E1B7A26F9000B6B12 /* Resources */,
 				4E251BD41B7A2F98000B6B12 /* ViewControllers */,
@@ -2848,6 +2862,15 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		4EAB00E91B7CC4DE00DC44A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4EAB00EA1B7CC50100DC44A0 /* RegisterManager.h */,
+				4EAB00EB1B7CC50100DC44A0 /* RegisterManager.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		4EFEC3611B7A321900D11D02 /* 登录 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3527,12 +3550,15 @@
 				4E6E74891B7A1DA800A62DB7 /* unzip.c in Sources */,
 				4E6E74531B7A1DA800A62DB7 /* XMPPDateTimeProfiles.m in Sources */,
 				4E93B9C51B7B06D100CD4B89 /* MBProgressHUD+MJ.m in Sources */,
+				4EAB00E51B7CBAE500DC44A0 /* RegisterController3.m in Sources */,
+				4EAB00E81B7CC25C00DC44A0 /* RegisterController4.m in Sources */,
 				4E6E744A1B7A1DA800A62DB7 /* XMPPvCardTempTel.m in Sources */,
 				4E6E74001B7A1DA800A62DB7 /* FMDatabase.m in Sources */,
 				4E6E74351B7A1DA800A62DB7 /* XMPPRoomHybridStorage.m in Sources */,
 				4E6E74281B7A1DA800A62DB7 /* XMPPRoster.m in Sources */,
 				4E6E740F1B7A1DA800A62DB7 /* NSData+XMPP.m in Sources */,
 				4E6E74361B7A1DA800A62DB7 /* XMPPRoomMessageHybridCoreDataStorageObject.m in Sources */,
+				4EAB00EC1B7CC50100DC44A0 /* RegisterManager.m in Sources */,
 				4E6E74041B7A1DA800A62DB7 /* FMResultSet.m in Sources */,
 				4E6E74011B7A1DA800A62DB7 /* FMDatabaseAdditions.m in Sources */,
 			);
