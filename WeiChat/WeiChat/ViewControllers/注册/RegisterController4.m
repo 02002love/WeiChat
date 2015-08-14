@@ -9,7 +9,8 @@
 #import "RegisterController4.h"
 
 @interface RegisterController4 ()<UITextFieldDelegate>
-- (IBAction)completeButton:(id)sender;
+- (IBAction)completeButton;
+
 @property (weak, nonatomic) IBOutlet UITextField *wordLabel;
 @property (weak, nonatomic) IBOutlet UITextField *addressLabel;
 
@@ -50,8 +51,8 @@
 }
 
 
-- (IBAction)completeButton:(id)sender {
-    
+- (IBAction)completeButton {
+    SKLog(@"wangcheng");
     if (self.wordLabel.text.length&&self.addressLabel.text.length) {
         RegisterManager * manager = [RegisterManager sharedManager];
         manager.address = self.addressLabel.text;
@@ -64,7 +65,7 @@
         
         [MBProgressHUD showMessage:@"小聊正在为你努力加载..."];
         [[ZCXMPPManager sharedInstance] registerMothod:^(BOOL isSucceed) {
-            
+            [MBProgressHUD hideHUD];
             if (isSucceed) {
                 //登录
                 [[ZCXMPPManager sharedInstance]connectLogin:^(BOOL isOK) {
@@ -121,4 +122,6 @@
     
     
 }
+
+
 @end

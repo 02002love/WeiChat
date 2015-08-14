@@ -51,6 +51,8 @@
         RegisterManager * manager = [RegisterManager sharedManager];
         manager.phoneNum = self.phoneNumField.text;
         manager.password = self.passwordFiled.text;
+        
+        [self performSegueWithIdentifier:@"three2four" sender:nil];
     }else{
     
         UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"提示" message: @"请填写资料" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil];

@@ -86,7 +86,7 @@
     UIImage * image =[info objectForKey:UIImagePickerControllerOriginalImage];
     [self.imageButton setBackgroundImage:image forState:UIControlStateNormal];
     RegisterManager * manager = [RegisterManager sharedManager];
-    manager.headImage = self.imageButton.imageView.image;
+    manager.headImage = image;
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }

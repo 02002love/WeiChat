@@ -374,7 +374,7 @@
                                         <rect key="frame" x="48" y="17" width="272" height="30"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <connections>
                                             <outlet property="delegate" destination="Yrw-x0-6ee" id="vr5-y4-hD9"/>
                                         </connections>
@@ -452,7 +452,7 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <textInputTraits key="textInputTraits"/>
                                         <connections>
                                             <outlet property="delegate" destination="Cpe-f6-eJ3" id="aUp-ng-pUP"/>
                                         </connections>
@@ -473,6 +473,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="completeButton" destination="Cpe-f6-eJ3" eventType="touchUpInside" id="fTW-g7-sPR"/>
+                                </connections>
                             </button>
                             <connections>
                                 <action selector="completeButton:" destination="Cpe-f6-eJ3" id="EAl-cj-z3l"/>
@@ -486,7 +489,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bza-l6-Ud6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2028" y="280"/>
+            <point key="canvasLocation" x="2008" y="280"/>
         </scene>
     </scenes>
     <resources>
